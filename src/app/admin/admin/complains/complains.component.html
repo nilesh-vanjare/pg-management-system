@@ -1,0 +1,60 @@
+<div class="container mt-4">
+
+  <div class="row">
+
+    <div class="col-md-4 mb-3" *ngFor="let item of complaintList">
+
+      <div class="card shadow-sm border-0">
+
+        <div class="card-header d-flex justify-content-between">
+
+          <h6 class="mb-0">
+            Complaint #{{item.id}}
+          </h6>
+
+          <span
+            class="badge bg-warning"
+            *ngIf="item.status == 'Pending'">
+            Pending
+          </span>
+
+          <span
+            class="badge bg-primary"
+            *ngIf="item.status == 'In Progress'">
+            In Progress
+          </span>
+
+          <span
+            class="badge bg-success"
+            *ngIf="item.status == 'Resolved'">
+            Resolved
+          </span>
+
+        </div>
+
+        <div class="card-body">
+
+          <p>
+            <strong>Type :</strong>
+            {{item.complaintType}}
+          </p>
+
+          <p>
+            <strong>Title :</strong>
+            {{item.title}}
+          </p>
+
+          <p>
+            <strong>Room No :</strong>
+            {{item.roomNumber}}
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

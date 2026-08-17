@@ -1,0 +1,231 @@
+{
+  "student": [
+    {
+      "name": "balaji",
+      "lastname": "csk",
+      "contact": "45678909876",
+      "sharing": "2",
+      "dateofBirth": "1994-02-01",
+      "email": "balaji@gmail.com",
+      "PermanentAddress": "Kaniyakumar ",
+      "State": "TamilNadu",
+      "RoomNumber": "111",
+      "id": "4"
+    },
+    {
+      "name": "nilesh",
+      "lastname": "vanjare",
+      "contact": "987656789",
+      "sharing": "2",
+      "dateofBirth": "1999-05-07",
+      "email": "nil@gmail.com",
+      "PermanentAddress": "nanded Maharastra",
+      "State": "Maharastra",
+      "RoomNumber": "104",
+      "id": "NsSTeAZMQoA"
+    },
+    {
+      "name": "Idrish",
+      "lastname": "dhudeKula",
+      "contact": "0987654678",
+      "sharing": "5",
+      "dateofBirth": "2000-06-06",
+      "email": "idrish@gmail.com",
+      "PermanentAddress": "Ap Andra Pradesh",
+      "State": "Andra Pradesh",
+      "RoomNumber": "292",
+      "id": "F8X3fbHNsB0"
+    },
+    {
+      "name": "Idrish",
+      "lastname": "dhudeKula",
+      "contact": "0987654678",
+      "sharing": "5",
+      "dateofBirth": "2000-06-06",
+      "email": "idrish@gmail.com",
+      "PermanentAddress": "Ap Andra Pradesh",
+      "State": "Andra Pradesh",
+      "RoomNumber": "292",
+      "id": "_f31eCIoVtA"
+    },
+    {
+      "name": "Idrish",
+      "lastname": "dhudeKula",
+      "contact": "0987654678",
+      "sharing": "6",
+      "dateofBirth": "2000-06-06",
+      "email": "idrish@gmail.com",
+      "PermanentAddress": "Ap Andra Pradesh",
+      "State": "Andra Pradesh",
+      "RoomNumber": "292",
+      "id": "ygimbO275RU"
+    },
+    {
+      "name": "Idrish",
+      "lastname": "dhudeKula",
+      "contact": "0987654678",
+      "sharing": "6",
+      "dateofBirth": "2000-06-06",
+      "email": "idrish@gmail.com",
+      "PermanentAddress": "Ap Andra Pradesh",
+      "State": "Andra Pradesh",
+      "RoomNumber": "292",
+      "id": "nCJMRr35PTE"
+    }
+  ],
+  "complaints": [
+    {
+      "id": "1",
+      "complaintType": "Room",
+      "title": "Fan Not Working",
+      "roomNumber": "101",
+      "status": "Pending"
+    },
+    {
+      "id": "2",
+      "complaintType": "WiFi",
+      "title": "Internet Not Working",
+      "roomNumber": "102",
+      "status": "In Progress"
+    },
+    {
+      "id": "3",
+      "complaintType": "Bathroom",
+      "title": "Water Leakage",
+      "roomNumber": "103",
+      "status": "Resolved"
+    },
+    {
+      "id": "4",
+      "complaintType": "Mess",
+      "title": "Food Quality Issue",
+      "roomNumber": "104",
+      "status": "Pending"
+    },
+    {
+      "id": "5",
+      "complaintType": "Security",
+      "title": "Visitor Entry Issue",
+      "roomNumber": "105",
+      "status": "Resolved"
+    },
+    {
+      "complaintType": "Room",
+      "title": "smell are comming",
+      "roomNumber": "297",
+      "status": "Pending",
+      "id": "UwNNiTtQ0ko"
+    }
+  ],
+  "login": [
+    {
+      "role": "admin",
+      "username": "Nilesh",
+      "password": "Pass@1234",
+      "id": "6bZjg7ppf0I"
+    },
+    {
+      "id": "RFRnbz75Eek",
+      "name": "Ravi",
+      "lastname": "kathare",
+      "contact": 90753565688,
+      "sharing": 2,
+      "Date of Birth": "07-05-2000",
+      "Email ID": "ravi@gmail.com",
+      "Permanent Address": "Nanded, Maharashtra",
+      "State": "Maharashtra",
+      "Room Number": 105
+    },
+    {
+      "role": "student",
+      "username": "yogesh",
+      "password": "2345",
+      "id": "FoG_Ck4g1rI"
+    },
+    {
+      "username": "s",
+      "password": "ss",
+      "role": "ADMIN",
+      "id": "4IdrLzV1nj0"
+    },
+    {
+      "username": "ssss",
+      "password": "sssss",
+      "role": "ADMIN",
+      "id": "Ph1c-2tiCeU"
+    },
+    {
+      "username": "zzzzzzz",
+      "password": "zzzzzzzzzzzz",
+      "role": "ADMIN",
+      "id": "wwl5_9rUwPs"
+    },
+    {
+      "username": "dddd",
+      "password": "ddddddd",
+      "role": "STUDENT",
+      "id": "MSPGaWK3nnU"
+    },
+    {
+      "username": "ddd",
+      "password": "ddd",
+      "role": "ADMIN",
+      "id": "t41udjJmNRI"
+    },
+    {
+      "username": "dddddddddddddd",
+      "password": "dddddddddd",
+      "role": "STUDENT",
+      "id": "s5bN_2g1Ank"
+    },
+    {
+      "username": "ccccc",
+      "password": "cccccc",
+      "role": "ADMIN",
+      "id": "JxtD7KOarTk"
+    },
+    {
+      "username": "cccccc",
+      "password": "cccc",
+      "role": "STUDENT",
+      "id": "FkMymOMutGI"
+    },
+    {
+      "username": "dddddd",
+      "password": "dddddddd",
+      "role": "ADMIN",
+      "id": "xUeyAWw64Qc"
+    },
+    {
+      "username": "nilesh",
+      "password": "Pass@123",
+      "role": "ADMIN",
+      "id": "QVj3d1TyHUo"
+    },
+    {
+      "username": "sd",
+      "password": "dd",
+      "role": "STUDENT",
+      "id": "ModpxKwwW00"
+    },
+    {
+      "username": "nilesh",
+      "password": "Pass@123",
+      "role": "ADMIN",
+      "id": "AYTXxOJbJWA"
+    },
+    {
+      "username": "ccc",
+      "password": "cc",
+      "role": "ADMIN",
+      "id": "XnZm1q8T28M"
+    },
+    {
+      "username": "f",
+      "password": "ff",
+      "role": "ADMIN",
+      "id": "U54fAZi7Va4"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

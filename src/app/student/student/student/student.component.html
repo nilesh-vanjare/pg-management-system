@@ -1,0 +1,71 @@
+<div class="container mt-4">
+  <div class="card shadow">
+
+    <div class="card-header d-flex justify-content-between align-items-center">
+      <h4 class="mb-0">Student List</h4>
+
+      <!-- <button class="btn btn-primary">
+        Add Student
+      </button> -->
+    </div>
+
+    <div class="card-body">
+
+      <div class="table-responsive">
+        <table class="table table-bordered table-hover align-middle">
+
+          <thead class="table-dark">
+            <tr>
+              <th>No.</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Contact</th>
+              <th>Sharing</th>
+              <th>Date Of Birth</th>
+              <th>Email</th>
+              <th>Address</th>
+              <th>State</th>
+              <th>Room No</th>
+              <!-- <th>Action</th> -->
+            </tr>
+          </thead>
+
+          <tbody>
+             <tr *ngFor="let student of studentArray; let i = index">
+             <td>{{i + 1}}</td>
+              <td>{{ student.name }}</td>
+              <td>{{ student.lastname }}</td>
+              <td>{{ student.contact }}</td>
+
+              <td>
+                <span class="badge bg-info">
+                  {{ student.sharing }} Sharing
+                </span>
+              </td>
+
+               <td>{{ student['dateofBirth'] }}</td>
+              <td>{{ student['email'] }}</td>
+              <td>{{ student['PermanentAddress'] }}</td>
+              <td>{{ student.State }}</td>
+              <td>{{ student['RoomNumber'] }}</td>
+
+              <!-- <td>
+               <div class="d-flex justify-content-between">
+                 <button class="btn btn-sm btn-warning me-2">
+                  Edit
+                </button>
+
+                <button class="btn btn-sm btn-danger">
+                  Delete
+                </button>
+               </div>
+              </td> -->
+            </tr> 
+          </tbody>
+
+        </table>
+      </div>
+
+    </div>
+  </div>
+</div>

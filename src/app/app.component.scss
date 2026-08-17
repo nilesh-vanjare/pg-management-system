@@ -1,0 +1,23 @@
+.container{
+  height: 100vh;
+}
+
+.cards{
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+mat-card{
+  padding: 20px;
+  width: 250px;
+}
+.charts{
+   display: flex;
+  gap: 20px;
+  padding: 20px; 
+}
+.tables{
+    gap: 20px;
+  padding: 20px; 
+}

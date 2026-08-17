@@ -1,0 +1,63 @@
+<div class="container mt-4">
+
+  <div class="card shadow">
+    <div class="card-header bg-danger text-white">
+      <h4 class="mb-0">
+        Complaint Registration
+      </h4>
+    </div>
+
+    <div class="card-body">
+
+      <form [formGroup]="complaintForm" (ngSubmit)="complainSubmit()">
+
+        <div class="row">
+
+          <div class="col-md-6 mb-3">
+            <label class="form-label">Complaint Type</label>
+            <select class="form-select" formControlName="complaintType">
+              <option value="">Select Type</option>
+              <option value="Room">Room Issue</option>
+              <option value="Bathroom">Bathroom Issue</option>
+              <option value="WiFi">WiFi Issue</option>
+              <option value="Mess">Mess Issue</option>
+              <option value="Security">Security Issue</option>
+            </select>
+          </div>
+
+          <div class="col-md-6 mb-3">
+            <label class="form-label">Room Number</label>
+            <input type="text"
+                   class="form-control"
+                   formControlName="roomNumber">
+          </div>
+
+          <div class="col-md-12 mb-3">
+            <label class="form-label">Complaint Title</label>
+            <input type="text"
+                   class="form-control"
+                   formControlName="title">
+          </div>
+
+          <div class="col-md-12 mb-3">
+            <label class="form-label">Description</label>
+            <textarea rows="4"
+                      class="form-control"
+                      formControlName="description">
+            </textarea>
+          </div>
+
+        </div>
+
+        <div class="text-end">
+          <button class="btn btn-danger">
+            Submit Complaint
+          </button>
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+
+</div>

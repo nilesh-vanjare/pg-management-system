@@ -1,0 +1,155 @@
+<div class="container mt-4">
+  <div class="card shadow">
+
+    <div class="card-header d-flex justify-content-between align-items-center">
+      <h4 class="mb-0">Student List</h4>
+
+      <button class="btn btn-primary" (click)="showDialog()" >
+        Add Student
+      </button>
+    </div>
+
+    <div class="card-body">
+
+
+      <div class="table-responsive">
+        <table class="table table-bordered table-hover align-middle">
+
+          <thead class="table-dark">
+            <tr>
+              <th>Sr.no</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Contact</th>
+              <th>Sharing</th>
+              <th>Date Of Birth</th>
+              <th>Email</th>
+              <th>Address</th>
+              <th>State</th>
+              <th>Room No</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+
+          <tbody>
+             <tr *ngFor="let student of studentArray ;let i = index" >
+              <td>{{ i+1 }}</td>
+              <td>{{ student.name }}</td>
+              <td>{{ student.lastname }}</td>
+              <td>{{ student.contact }}</td>
+
+              <td>
+                <span class="badge bg-info">
+                  {{ student.sharing }} Sharing
+                </span>
+              </td>
+
+              <td>{{ student['dateofBirth'] }}</td>
+              <td>{{ student['email'] }}</td>
+              <td>{{ student['PermanentAddress'] }}</td>
+              <td>{{ student.State }}</td>
+              <td>{{ student['RoomNumber'] }}</td>
+
+              <td>
+               <div class="d-flex justify-content-between">
+                 <button class="btn btn-sm btn-warning m-1"  (click)="editStudent(student)">
+                 Update
+                </button>
+
+                <button class="btn btn-sm btn-primary m-1" [routerLink]="student.id">
+                 Detial
+                </button>
+
+                <button class="btn btn-sm btn-danger " (click)=" deleteStudent(student)">
+                  Delete
+                </button>
+               </div>
+              </td>
+            </tr> 
+          </tbody>
+
+        </table>
+      </div>
+
+    </div>
+  </div>
+</div>
+ 
+<p-dialog header="Add Student" [modal]="true" [(visible)]="visible" [style]="{ width: '60rem' }">
+
+  <form [formGroup]="studentForm" (ngSubmit)="StdSubmit()">
+
+    <div class="row">
+
+      <div class="col-md-6 mb-3">
+        <label>Name</label>
+        <input type="text" formControlName="name" class="form-control">
+        <span class="danger" *ngIf="f['name'].touched && f['name'].invalid">Name is Required !! </span>
+      </div>
+
+      <div class="col-md-6 mb-3">
+        <label>Last Name</label>
+        <input type="text" formControlName="lastname" class="form-control">
+        <span class="danger" *ngIf="f['lastname'].touched && f['lastname'].invalid">Last Name Is Required !!</span>
+      </div>
+
+      <div class="col-md-6 mb-3">
+        <label>Contact</label>
+        <input type="text" formControlName="contact" class="form-control">
+        <span class="danger" *ngIf="f['contact'].touched && f['contact'].invalid"> contact is required !!</span>
+      </div>
+
+      <div class="col-md-6 mb-3">
+        <label>Sharing</label>
+        <input type="text" formControlName="sharing" class="form-control">
+        <span class="danger" *ngIf="f['sharing'].touched  && f['sharing'].invalid"> sharing is mandetary !! </span>
+      </div>
+
+      <div class="col-md-6 mb-3">
+        <label>Date Of Birth</label>
+        <input type="date" formControlName="dateofBirth" class="form-control">
+                <span class="danger" *ngIf="f['dateofBirth'].touched  && f['dateofBirth'].invalid"> birthdate  is mandetary !! </span>
+
+       
+      </div>
+
+      <div class="col-md-6 mb-3">
+        <label>Email</label>
+        <input type="email" formControlName="email" class="form-control">
+        <span class="danger" *ngIf="f['email'].touched  && f['email'].invalid"> email  is mandetary !! </span>
+
+      </div>
+
+      <div class="col-md-6 mb-3">
+        <label>Permanent Address</label>
+        <input type="text" formControlName="PermanentAddress" class="form-control">
+        <span class="danger" *ngIf="f['PermanentAddress'].touched  && f['PermanentAddress'].invalid"> PermanentAddress  is mandetary !! </span>
+      </div>
+
+      <div class="col-md-6 mb-3">
+        <label>State</label>
+        <input type="text" formControlName="State" class="form-control">
+        <span class="danger" *ngIf="f['State'].touched  && f['State'].invalid"> State  is mandetary !! </span>
+
+      </div>
+
+      <div class="col-md-6 mb-3">
+        <label>Room Number</label>
+        <input type="text" formControlName="RoomNumber" class="form-control" >
+        <span class="danger" *ngIf="f['RoomNumber'].touched  && f['RoomNumber'].invalid"> RoomNumber  is mandetary !! </span>
+      </div>
+
+    </div>
+
+    <div class="text-end mt-3">
+      <button  *ngIf="!isEditMode" class="btn btn-primary" type="submit">
+        Submit
+      </button>
+      <button *ngIf="isEditMode" (click)="updateStudent()" class="btn btn-success" type="button"  >
+      update
+      </button>
+    </div>
+
+  </form>
+
+</p-dialog>
