@@ -130,6 +130,7 @@ editStudent(student : any){
 
   this.selectedStudentId = student.id;
   this.studentForm.patchValue({
+    
     name : student.name,
      lastname: student.lastname,
     contact: student.contact,
